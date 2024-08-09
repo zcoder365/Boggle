@@ -2,7 +2,7 @@ from ascii import ascii_uppercase # type: ignore
 import random
 
 # letter occurrances in the boggle square
-COUNT = {
+FINAL_COUNT = {
     "a": 12,
     "b": 1,
     "c": 5,
