@@ -9,8 +9,8 @@ def home():
 
 @app.route("/shuffle")
 def shuffle():
-    letters = generateLetters()
+    chosen_letters = generateLetters()
     
-    return render_template("index.html", letter1=letters[0], letter2=letters[1], letter3=letters[2], letter4=letters[3], letter5=letters[4], letter6=letters[5], letter7=letters[6], letter8=letters[7], letter9=letters[8], letter10=letters[9], letter11=letters[10], letter12=letters[11], letter13=letters[12], letter14=letters[13], letter15=letters[14], letter16=letters[15], letter17=letters[16], letter18=letters[17], letter19=letters[18], letter20=letters[19], letter21=letters[20], letter22=letters[21], letter23=letters[22], letter24=letters[23], letter25=letters[24])
+    return render_template("index.html", letter1=chosen_letters[0], letter2=chosen_letters[1], letter3=chosen_letters[2], letter4=chosen_letters[3], letter5=chosen_letters[4], letter6=chosen_letters[5], letter7=chosen_letters[6], letter8=chosen_letters[7], letter9=chosen_letters[8], letter10=chosen_letters[9], letter11=chosen_letters[10], letter12=chosen_letters[11], letter13=chosen_letters[12], letter14=chosen_letters[13], letter15=chosen_letters[14], letter16=chosen_letters[15], letter17=chosen_letters[16], letter18=chosen_letters[17], letter19=chosen_letters[18], letter20=chosen_letters[19], letter21=chosen_letters[20], letter22=chosen_letters[21], letter23=chosen_letters[22], letter24=chosen_letters[23], letter25=chosen_letters[24])
 
 app.run(debug=True)
