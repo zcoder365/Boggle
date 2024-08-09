@@ -37,3 +37,4 @@ def generate_letters():
     
     for i in range(25):
         letter = random.choice(alphabet)
+        letters.append(letter)
