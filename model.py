@@ -1,4 +1,4 @@
-import ascii # type: ignore
+import ascii
 import random
 
 # letter occurrances in the boggle square (final)
@@ -7,7 +7,7 @@ FINAL_COUNT = {
 }
 
 # generate list of letters
-alphabet = list(ascii.ascii_uppercase())
+alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
 # keep track of the count of the letters (changing)
 count = {
