@@ -19,13 +19,10 @@ def generateLetters():
     
     while letters_len <= 25:
         letter = random.choice(alphabet)
-        updateLetterCount(letter)
+        count[letter.lower()] += 1
         # checkLetterCounts(letters)
         
     return letters
-
-def updateLetterCount(letter):
-    count[letter.lower()] += 1
             
 def checkLetterCounts(letters_list):
     for i, letter in enumerate(letters_list):
