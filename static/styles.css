@@ -5,3 +5,8 @@ body {
 table {
     display: inline-flex;
 }
+
+table td {
+    text-align: center;
+    vertical-align: middle;
+}
