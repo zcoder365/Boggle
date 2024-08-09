@@ -44,3 +44,53 @@ def generate_letters():
         
         if letter == "A":
             count["a"] += 1
+        if letter == "B":
+            count["b"] += 1
+        if letter == "C":
+            count["c"] += 1
+        if letter == "D":
+            count["d"] += 1
+        if letter == "E":
+            count["e"] += 1
+        if letter == "F":
+            count["f"] += 1
+        if letter == "G":
+            count["g"] += 1
+        if letter == "H":
+            count["h"] += 1
+        if letter == "I":
+            count["i"] += 1
+        if letter == "J":
+            count["j"] += 1
+        if letter == "K":
+            count["k"] += 1
+        if letter == "L":
+            count["l"] += 1
+        if letter == "M":
+            count["m"] += 1
+        if letter == "N":
+            count["n"] += 1
+        if letter == "O":
+            count["o"] += 1
+        if letter == "P":
+            count["p"] += 1
+        if letter == "Q":
+            count["q"] += 1
+        if letter == "R":
+            count["r"] += 1
+        if letter == "S":
+            count["s"] += 1
+        if letter == "T":
+            count["t"] += 1
+        if letter == "U":
+            count["u"] += 1
+        if letter == "V":
+            count["v"] += 1
+        if letter == "W":
+            count["w"] += 1
+        if letter == "X":
+            count["x"] += 1
+        if letter == "Y":
+            count["y"] += 1
+        if letter == "Z":
+            count["z"] += 1
