@@ -15,8 +15,9 @@ count = {
 
 def generateLetters():
     letters = [] # keep track of letters generated
+    letters_len = len(letters)
     
-    for i in range(25):
+    while letters_len <= 25:
         letter = random.choice(alphabet)
         updateLetterCount(letter)
         checkLetterCounts(letters)
