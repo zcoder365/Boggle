@@ -1,4 +1,5 @@
-import ascii
+from ascii import ascii_uppercase # type: ignore
+import random
 
 # letter occurrances in the boggle square
 A_COUNT = 12
@@ -29,7 +30,10 @@ Y_COUNT = 3
 Z_COUNT = 1
 
 # generate list of letters
-alphabet = list(ascii.ascii_uppercase())
+alphabet = list(ascii_uppercase())
 
 def generate_letters():
-    pass
+    letters = [] # keep track of letters generated
+    
+    for i in range(25):
+        letter = random.choice(alphabet)
