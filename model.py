@@ -100,4 +100,12 @@ def updateLetterCount(letter):
             
 def checkLetterCounts(letters_list):
     for letter in letters_list:
-        if count[letter.lower()] <=
+        if count[letter.lower()] <= FINAL_COUNT[letter.lower()]:
+            pass
+        
+        elif count[letter.lower()] > FINAL_COUNT[letter.lower()]:
+            letter_to_change = letters_list.index(letter)
+            
+            new_letter = random.choice(alphabet)
+            
+            letters_list[letter_to_change] = new_letter
