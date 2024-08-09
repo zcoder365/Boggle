@@ -2,32 +2,34 @@ from ascii import ascii_uppercase # type: ignore
 import random
 
 # letter occurrances in the boggle square
-A_COUNT = 12
-B_COUNT = 1
-C_COUNT = 5
-D_COUNT = 6
-E_COUNT = 19
-F_COUNT = 4
-G_COUNT = 3
-H_COUNT = 5
-I_COUNT = 11
-J_COUNT = 1
-K_COUNT = 1
-L_COUNT = 5
-M_COUNT = 4
-N_COUNT = 11
-O_COUNT = 11
-P_COUNT = 4
-Q_COUNT = 1
-R_COUNT = 12
-S_COUNT = 9
-T_COUNT = 13
-U_COUNT = 4
-V_COUNT = 1
-W_COUNT = 2
-X_COUNT = 1
-Y_COUNT = 3
-Z_COUNT = 1
+COUNT = {
+    "a": 12,
+    "b": 1,
+    "c": 5,
+    "d": 6,
+    "e": 19,
+    "f": 4,
+    "g": 3,
+    "h": 5,
+    "i": 11,
+    "j": 1,
+    "k": 1,
+    "l": 5,
+    "m": 4,
+    "n": 11,
+    "o": 11,
+    "p": 4,
+    "q": 1,
+    "r": 12,
+    "s": 9,
+    "t": 13,
+    "u": 4,
+    "v": 1,
+    "w": 12,
+    "x": 1,
+    "y": 3,
+    "z": 1,
+}
 
 # generate list of letters
 alphabet = list(ascii_uppercase())
@@ -95,3 +97,7 @@ def updateLetterCount(letter):
             count["y"] += 1
         if letter == "Z":
             count["z"] += 1
+            
+def checkLetterCounts(letters_list):
+    for letter in letters_list:
+        if count[letter.lower()] <=
