@@ -1,7 +1,7 @@
 from ascii import ascii_uppercase # type: ignore
 import random
 
-# letter occurrances in the boggle square
+# letter occurrances in the boggle square (final)
 FINAL_COUNT = {
     "a": 12, "b": 1, "c": 5, "d": 6, "e": 19, "f": 4, "g": 3, "h": 5, "i": 11, "j": 1, "k": 1, "l": 5, "m": 4, "n": 11, "o": 11, "p": 4, "q": 1, "r": 12, "s": 9, "t": 13, "u": 4, "v": 1, "w": 12, "x": 1, "y": 3, "z": 1,
 }
