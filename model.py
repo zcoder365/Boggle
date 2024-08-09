@@ -29,13 +29,13 @@ def updateLetterCount(letter):
     count[letter.lower()] += 1
             
 def checkLetterCounts(letters_list):
-    for letter in letters_list:
-        if count[letter.lower()] <= FINAL_COUNT[letter.lower()]:
-            pass
-        
-        elif count[letter.lower()] > FINAL_COUNT[letter.lower()]:
-            letter_to_change = letters_list.index(letter)
-            
+    for i, letter in enumerate(letters_list):
+        if count[letter.lower()] > FINAL_COUNT[letter.lower()]:
             new_letter = random.choice(alphabet)
-            
-            letters_list[letter_to_change] = new_letter
+            while count[new_letter.lower()] >= FINAL_COUNT[new_letter.lower()]:
+                new_letter = random.choice(alphabet)
+            # Update counts
+            count[letter.lower()] -= 1
+            count[new_letter.lower()] += 1
+            # Replace letter
+            letters_list[i] = new_letter
