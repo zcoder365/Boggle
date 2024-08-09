@@ -1,3 +1,4 @@
+# letter occurrances in the boggle square
 A_COUNT = 12
 B_COUNT = 1
 C_COUNT = 5
