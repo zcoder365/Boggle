@@ -13,4 +13,5 @@ table td {
     padding: 20px;
     border: 2px black solid;
     font-size: large;
+    font-weight: bold;
 }
