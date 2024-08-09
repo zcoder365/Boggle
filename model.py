@@ -35,6 +35,12 @@ alphabet = list(ascii_uppercase())
 def generate_letters():
     letters = [] # keep track of letters generated
     
+    count = {
+        "a": 0, "b": 0
+    }
+    
     for i in range(25):
         letter = random.choice(alphabet)
-        letters.append(letter)
+        
+        if letter == "A":
+            count["a"] += 1
