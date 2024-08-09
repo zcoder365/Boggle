@@ -20,8 +20,7 @@ def generateLetters():
     for i in range(25):
         letter = random.choice(alphabet)
         updateLetterCount(letter)
-    
-    checkLetterCounts(letters)
+        checkLetterCounts(letters)
         
     return letters
 
