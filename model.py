@@ -1,4 +1,3 @@
-import ascii
 import random
 
 # letter occurrances in the boggle square (final)
