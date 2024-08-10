@@ -38,9 +38,9 @@ def home():
 
 @app.route('/get_time')
 def get_time():
-    global start_time
-    elapsed_time = int(time.time() - start_time)
-    remaining_time = max(0, 180 - elapsed_time)
+    time_elapsed = int(time.time()) % 180
+    remaining_time = 180 - time_elapsed
+
     return jsonify({'time': remaining_time})
 
 app.run(debug=True)
