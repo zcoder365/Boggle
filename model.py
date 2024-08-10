@@ -32,5 +32,5 @@ def checkLetterCount(letters: list):
         if count[letter.lower()] <= FINAL_COUNT[letter.lower()]:
             print(f"{letter} is good.")
         
-        elif count[letter] > FINAL_COUNT[letter]:
+        elif count[letter.lower()] > FINAL_COUNT[letter.lower()]:
             print(f"{letter} at index {letters.index(letter)} exceeds letter count.")
