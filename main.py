@@ -1,5 +1,6 @@
 from flask import Flask, render_template, jsonify
 from model import *
+import time
 
 app = Flask(__name__)
 
