@@ -10,7 +10,7 @@ function timer(){
     
     var timer = setInterval( function() {
         // update the timer on the page
-        document.getElementById('timerDisplay').innerHTML=(sec%60)+':'+sec;
+        document.getElementById('timerDisplay').innerHTML=sec;
        
         sec--; // decrease the seconds by 1
     
