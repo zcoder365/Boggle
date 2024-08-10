@@ -2,6 +2,9 @@ from flask import Flask, render_template, jsonify
 from model import *
 import time
 
+# store the start time
+start_time = None
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -38,8 +41,14 @@ def home():
 
 @app.route('/get_time')
 def get_time():
-    time_elapsed = int(time.time()) % 180
-    remaining_time = 180 - time_elapsed
+    global start_time
+    
+    if start_time is None:
+        start_time = time.time()
+    
+    time_elapsed = int(time.time() - start_time)
+    
+    remaining_time = max(0, 180 - time_elapsed)
 
     return jsonify({'time': remaining_time})
 
