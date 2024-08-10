@@ -20,18 +20,5 @@ def generateLetters():
     while letters_len <= 25:
         letter = random.choice(alphabet)
         count[letter.lower()] += 1
-        # checkLetterCounts(letters)
         
     return letters
-            
-def checkLetterCounts(letters_list):
-    for i, letter in enumerate(letters_list):
-        if count[letter.lower()] > FINAL_COUNT[letter.lower()]:
-            new_letter = random.choice(alphabet)
-            while count[new_letter.lower()] >= FINAL_COUNT[new_letter.lower()]:
-                new_letter = random.choice(alphabet)
-            # Update counts
-            count[letter.lower()] -= 1
-            count[new_letter.lower()] += 1
-            # Replace letter
-            letters_list[i] = new_letter
