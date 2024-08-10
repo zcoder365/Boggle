@@ -15,6 +15,7 @@ start.addEventListener('click', function timer() {
         if (sec < 0) {
             // clear the interval
             clearInterval(timer);
+            
             document.getElementById('timer').innerHTML = "0"; // ensure it shows 0
         }
     
