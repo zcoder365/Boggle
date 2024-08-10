@@ -44,4 +44,4 @@ def replaceLetter(letters_list: list, index: int):
     letters_list[index] = new_letter
     count[new_letter.lower()] += 1
     
-    print(f"{letters_list[index]} at index {index} replaced by {new_letter}.")
+    print(f"{letters_list[index]} at index {index} replaced by {new_letter}.\n")
