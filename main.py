@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 from model import *
 
 app = Flask(__name__)
@@ -34,5 +34,11 @@ def home():
     twentyFive = letters[24]
     
     return render_template("index.html", letter1=one, letter2=two, letter3=three, letter4=four, letter5=five, letter6=six, letter7=seven, letter8=eight, letter9=nine, letter10=ten, letter11=eleven, letter12=twelve, letter13=thirteen, letter14=fourteen, letter15=fifteen, letter16=sixteen, letter17=seventeen, letter18=eighteen, letter19=nineteen, letter20=twenty, letter21=twentyOne, letter22=twentyTwo, letter23=twentyThree, letter24=twentyFour, letter25=twentyFive)
+
+@app.route('/get_time')
+def get_time():
+    # You can replace this with your own logic
+    remaining_time = max(0, 180 - int(time.time()) % 181)
+    return jsonify({'time': remaining_time})
 
 app.run(debug=True)
