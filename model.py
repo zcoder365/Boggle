@@ -17,7 +17,7 @@ def generateLetters():
     letters = [] # keep track of letters generated
     letters_len = len(letters)
     
-    for i in range(1, 25):
+    for i in range(1, 26):
         letter = random.choice(alphabet)
         count[letter.lower()] += 1
         letters.append(letter)
