@@ -32,7 +32,11 @@ def checkLetterCount(letters: list):
             pass
         
         elif count[letter.lower()] > FINAL_COUNT[letter.lower()]:
-            print(f"{letter} at index {letters.index(letter)} exceeds letter count.")
+            index = letters.index(letter)
+            
+            print(f"{letter} at index {index} exceeds letter count.")
+            
+            replaceLetter(letters, index)
             
             
 def replaceLetter(letters_list: list, index: int):
