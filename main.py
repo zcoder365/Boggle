@@ -50,7 +50,7 @@ def get_time():
     
     time_remaining = max(0, 180 - time_elapsed)
     
-    while time_elapsed < 180:
+    while time_elapsed <= 180:
         print(f"Time Elapsed: {time_elapsed}\nTime Remaining: {time_remaining}")
         
         return jsonify({'time': time_remaining})
