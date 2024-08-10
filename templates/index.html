@@ -55,4 +55,19 @@
 
 <div id="timer">180</div>
 
+<script>
+    // function to fetch and update the timer
+    function updateTimer() {
+        fetch('/get_time')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('timer').innerHTML = data.time;
+            });
+    }
+
+    document.querySelector("#startTimer").addEventListener('click', function() {
+        setInterval(updateTimer, 1000); // Call updateTimer every second
+    });
+</script>
+
 {% endblock %}
