@@ -48,8 +48,10 @@ def get_time():
     
     time_elapsed = int(time.time() - start_time)
     
-    remaining_time = max(0, 180 - time_elapsed)
+    time_remaining = max(0, 180 - time_elapsed)
+    
+    print(f"Time Elapsed: {time_elapsed}\nTime Remaining: {time_remaining}")
 
-    return jsonify({'time': remaining_time})
+    return jsonify({'time': time_remaining})
 
 app.run(debug=True)
