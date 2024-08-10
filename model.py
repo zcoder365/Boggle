@@ -22,4 +22,16 @@ def generateLetters():
         count[letter.lower()] += 1
         letters.append(letter)
         
+    checkLetterCount(letters)
+        
     return letters
+
+def checkLetterCount(letters: list):
+    for letter in letters:
+        letter = letter.lower()
+        
+        if count[letter] <= FINAL_COUNT[letter]:
+            print(f"{letter} is good.")
+        
+        elif count[letter] > FINAL_COUNT[letter]:
+            print(f"{letter} at index {letters.index(letter)} exceeds letter count.")
