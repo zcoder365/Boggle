@@ -30,7 +30,13 @@ dice = [
 
 def getRandomLetters():
     # get random letters from each of the dice and store in a list
-    pass
+    letters = []
+    
+    for i in range(len(dice)):
+        letter = random.choice(dice[i])
+        letters.apppend(letter)
+    
+    return letters
 
 def shuffleDice(dice):
     # shuffle the list of the dice so they're moved around
