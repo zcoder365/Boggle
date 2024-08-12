@@ -34,4 +34,6 @@ def getRandomLetters():
 
 def shuffleDice(dice):
     # shuffle the list of the dice so they're moved around
-    pass
+    dice = random.shuffle(dice)
+    
+    return dice
