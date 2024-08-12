@@ -9,7 +9,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    letters = list(generateLetters())
+    letters = getRandomLetters()
+    shuffled_letters = shuffleDice(letters)
     
     return render_template("index.html", letters=letters)
 
