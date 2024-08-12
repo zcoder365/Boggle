@@ -12,7 +12,7 @@ def home():
     letters = getRandomLetters()
     shuffled_letters = shuffleDice(letters)
     
-    return render_template("index.html", letters=letters)
+    return render_template("index.html", letters=shuffled_letters)
 
 @app.route('/get_time')
 def get_time():
