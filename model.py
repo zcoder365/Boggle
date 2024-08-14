@@ -1,4 +1,4 @@
-import random
+import random, numpy
 
 dice = [
     ['A', 'A', 'E', 'E', 'G', 'N'],
@@ -38,7 +38,13 @@ def getRandomLetters():
     
     # return letters
 
-def shuffleDice(dice):
-    shuffled = random.shuffle(dice)
+def shuffleDice(letters):
+    # shuffled = random.shuffle(dice)
+    # shuffled2 = numpy.random.shuffle(dice)
     
-    return shuffled
+    # print(shuffled2)
+    
+    shuffled_letters = random.shuffle(letters)
+    print(shuffled_letters)
+    
+    pass
