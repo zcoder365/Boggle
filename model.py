@@ -38,7 +38,7 @@ def getRandomLetters():
     
     # return letters
 
-def shuffleDice(letters):
+def shuffleDice(letters: list):
     # shuffled = random.shuffle(dice)
     # shuffled2 = numpy.random.shuffle(dice)
     
