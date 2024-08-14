@@ -41,11 +41,6 @@ def getRandomLetters():
     return letters
 
 def shuffleDice(letters: list):
-    shuffled = random.shuffle(letters)
+    random.shuffle(letters)
     
-    print(type(letters), type(shuffled))
-    print()
-    print(shuffled)
-    print(len(shuffled))
-    
-    return shuffled
+    return letters
