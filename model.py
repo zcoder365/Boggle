@@ -33,7 +33,7 @@ def getRandomLetters():
     
     for i in range(len(dice)):
         letter = random.choice(dice[i])
-        letters.apppend(letter)
+        letters.append(letter)
     
     return letters
 
