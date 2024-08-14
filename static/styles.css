@@ -14,4 +14,6 @@ table td {
     border: 2px black solid;
     font-size: large;
     font-weight: bold;
+    width: 30px;
+    height: 60px;
 }
