@@ -31,7 +31,7 @@ dice = [
 def getRandomLetters():
     letters = []
     
-    for i in range(len(dice)):
+    for i in range(len(dice)+1):
         letter = random.choice(dice[i])
         letters.append(letter)
     
