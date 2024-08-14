@@ -33,18 +33,19 @@ def getRandomLetters():
     
     for i in range(len(dice)):
         letter = random.choice(dice[i])
-        # letters.append(letter)
+        letters.append(letter)
         print(i, letter)
+        
+    print(len(letters))
     
-    # return letters
+    return letters
 
 def shuffleDice(letters: list):
-    # shuffled = random.shuffle(dice)
-    # shuffled2 = numpy.random.shuffle(dice)
+    shuffled = random.shuffle(letters)
     
-    # print(shuffled2)
+    print(type(letters), type(shuffled))
+    print()
+    print(shuffled)
+    print(len(shuffled))
     
-    shuffled_letters = random.shuffle(letters)
-    print(shuffled_letters)
-    
-    pass
+    return shuffled
