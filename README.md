@@ -15,7 +15,6 @@ A web-based implementation of the classic Boggle word game using Flask, featurin
 This application implements a digital version of Boggle, presenting players with a 5x5 grid of letters. The letters are generated using authentic Boggle dice configurations, ensuring game authenticity. Players can shuffle the board to start a new game configuration.
 
 ## Installation
-
 1. Clone the repository
 2. Install the required dependencies:
 ```bash
@@ -28,7 +27,6 @@ python main.py
 4. Access the game at `http://localhost:5000`
 
 ## Project Structure
-
 ```
 boggle/
 ├── main.py           # Flask application entry point
@@ -54,7 +52,7 @@ def home():
     # Returns rendered template with 25 letter positions
 ```
 
-Key Features:
+**Key Features:**
 - Initializes Flask application
 - Handles route for main game page
 - Manages letter distribution to the game board
@@ -63,7 +61,7 @@ Key Features:
 #### model.py
 Contains the core game logic and dice configurations.
 
-Functions:
+**Functions:**
 - `getRandomLetters()`: 
   - Generates a list of 25 random letters based on authentic Boggle dice configurations
   - Returns a list of randomly selected letters from each die
@@ -98,7 +96,6 @@ Styling definitions including:
 - Board cell dimensions and borders
 
 ## Usage
-
 1. Access the game through your web browser
 2. View the 5x5 grid of randomly generated letters
 3. Click "Shuffle Letters" to generate a new board configuration
@@ -110,21 +107,18 @@ Styling definitions including:
    - Words must be at least 3 letters long
 
 ## Dependencies
-
 - Python 3.x
 - Flask
 - NumPy
 - Modern web browser with JavaScript enabled
 
-## Development Notes
-
+<!-- ## Development Notes
 Timer functionality is currently commented out but implemented in both frontend and backend. To enable the timer:
 1. Uncomment the timer-related code in `main.py`
 2. Uncomment the JavaScript timer code in `index.html`
-3. Add appropriate styling for timer display in `styles.css`
+3. Add appropriate styling for timer display in `styles.css` -->
 
 ## Future Enhancements
-
 1. Enable timer functionality
 2. Add word validation
 3. Implement score tracking
