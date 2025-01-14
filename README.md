@@ -1,5 +1,4 @@
-# Boggle Game Implementation
-
+# Boggle Game (Online)
 A web-based implementation of the classic Boggle word game using Flask, featuring a 5x5 grid of randomly generated letters.
 
 ## Table of Contents
